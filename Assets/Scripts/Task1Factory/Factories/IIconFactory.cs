@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Factory1.Version1
+namespace Factory.Task1
 {
     public interface IIconFactory
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Factory1.Version1
+namespace Factory.Task1
 {
     public class MainMenuIconFactory : IIconFactory
     {

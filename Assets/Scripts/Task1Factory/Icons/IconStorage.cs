@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Factory1.Version1
+namespace Factory.Task1
 {
     [Serializable]
     public class IconStorage

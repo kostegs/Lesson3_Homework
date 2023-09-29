@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Factory1.Version1
+namespace Factory.Task1
 {
     public class PanelUI : MonoBehaviour
     {

@@ -1,4 +1,4 @@
-namespace Factory1.Version1
+namespace Factory.Task1
 {
     public enum GameMode
     {

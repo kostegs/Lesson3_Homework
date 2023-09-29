@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Factory1.Version1
+namespace Factory.Task1
 {
     public class Bootstrap : MonoBehaviour
     {

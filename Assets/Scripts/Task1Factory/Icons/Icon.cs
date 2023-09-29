@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Factory1.Version1
+namespace Factory.Task1
 {
     [CreateAssetMenu(fileName = "IconCfg", menuName = "Resources/Icons")]
     public class Icon : ScriptableObject
