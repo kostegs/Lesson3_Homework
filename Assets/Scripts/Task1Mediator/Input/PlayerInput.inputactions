@@ -1,0 +1,102 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "PlayerControls",
+            "id": "8844ea0c-b395-4960-aeb3-7f762d87ecef",
+            "actions": [
+                {
+                    "name": "IncreaseHP",
+                    "type": "Button",
+                    "id": "51f172a0-d490-43bd-b022-c017d70e544a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DecreaseHP",
+                    "type": "Button",
+                    "id": "9f2afc33-64c2-41ba-90d9-8dccaf4f19d2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5c448bce-b2e8-4a2c-b56c-340a478d34d1",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "IncreaseHP",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "42a86335-35e8-422a-b924-e437d08f7e3d",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DecreaseHP",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "LevelControls",
+            "id": "41a667d9-7ec8-4459-8b3c-925f6a501a7c",
+            "actions": [
+                {
+                    "name": "IncreaseLevel",
+                    "type": "Button",
+                    "id": "f5b7db36-d2ff-4755-9c01-8ca248ee8aa2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DecreaseLevel",
+                    "type": "Button",
+                    "id": "3ddcd51a-18be-4694-8bd2-7048c201c5c2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "26f1faab-38fc-4d79-8090-4b27ba25c77b",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "IncreaseLevel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef5f10c3-7fe5-48a4-81ff-ebf5c80ea770",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DecreaseLevel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
