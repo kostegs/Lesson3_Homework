@@ -5,7 +5,8 @@ namespace Visitor
 {
     public abstract class Enemy : MonoBehaviour
     {
-        public event Action<Enemy> Died;
+        public event Action<Enemy> Died;        
+        public abstract EnemyConfig Config { get; }
 
         //  ака€-то обща€ логика врага: перемещение, жизни и т.п.
 

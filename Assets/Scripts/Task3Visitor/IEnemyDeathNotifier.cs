@@ -4,6 +4,6 @@ namespace Visitor
 {
     public interface IEnemyDeathNotifier
     {
-        event Action<Enemy> Notified;
+        event Action<EnemyConfig> Notified;
     }
 }

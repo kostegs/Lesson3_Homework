@@ -20,9 +20,9 @@ namespace Visitor
 
         public int Value => _enemyVisitor.Score;
 
-        public void OnEnemyKilled(Enemy enemy)
+        public void OnEnemyKilled(EnemyConfig enemyConfig)
         {
-            _enemyVisitor.Visit(enemy);
+            _enemyVisitor.Visit(enemyConfig);
             Debug.Log($"—чет: {Value}");
         }
         
@@ -30,13 +30,13 @@ namespace Visitor
         {
             public int Score { get; private set; }
 
-            public void Visit(Ork ork) => Score += 20;
+            public void Visit(OrkConfig orkConfig) => Score += orkConfig.Score;
 
-            public void Visit(Human human) => Score += 5;
+            public void Visit(HumanConfig humanConfig) => Score += humanConfig.Score;
             
-            public void Visit(Elf elf) => Score += 10;
+            public void Visit(ElfConfig elfConfig) => Score += elfConfig.Score;
 
-            public void Visit(Enemy enemy) => Visit((dynamic)enemy);                 
+            public void Visit(EnemyConfig enemyConfig) => Visit((dynamic)enemyConfig);                 
             
         }
     }

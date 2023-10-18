@@ -7,11 +7,12 @@ namespace Visitor
 {
     public class Spawner : MonoBehaviour, IEnemyDeathNotifier
     {
-        public event Action<Enemy> Notified;
+        public event Action<EnemyConfig> Notified;
 
         [SerializeField] private float _spawnCooldown;
         [SerializeField] private List<Transform> _spawnPoints;
         [SerializeField] private EnemyFactory _enemyFactory;
+        [SerializeField] private List<EnemyConfig> _objectsForSpawn;
 
         private List<Enemy> _spawnedEnemies = new List<Enemy>();
 
@@ -42,7 +43,8 @@ namespace Visitor
         {
             while (true)
             {
-                Enemy enemy = _enemyFactory.Get((EnemyType)UnityEngine.Random.Range(0, Enum.GetValues(typeof(EnemyType)).Length)); // получаем рэндомный тип врага
+                EnemyConfig config = _objectsForSpawn[UnityEngine.Random.Range(0, _objectsForSpawn.Count)];
+                Enemy enemy = _enemyFactory.Get(config); 
                 enemy.MoveTo(_spawnPoints[UnityEngine.Random.Range(0, _spawnPoints.Count)].position);
                 enemy.Died += OnEnemyDied;
                 _spawnedEnemies.Add(enemy); 
@@ -53,7 +55,7 @@ namespace Visitor
 
         private void OnEnemyDied(Enemy enemy)
         {
-            Notified?.Invoke(enemy);
+            Notified?.Invoke(enemy.Config);
             enemy.Died -= OnEnemyDied;
             _spawnedEnemies.Remove(enemy);
         }

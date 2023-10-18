@@ -10,21 +10,21 @@ namespace Visitor
         [SerializeField] private Ork _orkPrefab;
         [SerializeField] private Elf _elfPrefab;
 
-        public Enemy Get(EnemyType enemyType)
+        public Enemy Get(EnemyConfig enemyConfig)
         {
-            switch (enemyType)
+            switch (enemyConfig)
             {
-                case EnemyType.Elf:
+                case ElfConfig:
                     return Instantiate(_elfPrefab);
 
-                case EnemyType.Human: 
+                case HumanConfig: 
                     return Instantiate(_humanPrefab);
 
-                case EnemyType.Ork: 
+                case OrkConfig: 
                     return Instantiate(_orkPrefab);
 
                 default:
-                    throw new ArgumentException(nameof(enemyType));
+                    throw new ArgumentException(nameof(enemyConfig));
             }
         }
     }

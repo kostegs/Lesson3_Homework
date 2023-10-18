@@ -2,12 +2,12 @@ namespace Visitor
 {
     public interface IEnemyVisitor
     {
-        void Visit(Ork ork);
+        void Visit(OrkConfig orkConfig);
         
-        void Visit(Human human);
+        void Visit(HumanConfig humanConfig);
         
-        void Visit(Elf elf);
+        void Visit(ElfConfig elfConfig);
 
-        void Visit(Enemy enemy);
+        void Visit(EnemyConfig enemyConfig);
     }
 }
