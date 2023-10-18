@@ -372,6 +372,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 731859e895b0ffe4b83c0ee8db608e9b, type: 2}
   - {fileID: 11400000, guid: c6cb31adf64e6ad44802e5c9885a189d, type: 2}
   - {fileID: 11400000, guid: ea28b4f54e8820c4ab32233b80edd7f4, type: 2}
+  _maxWeight: 150
 --- !u!4 &1466359494
 Transform:
   m_ObjectHideFlags: 0

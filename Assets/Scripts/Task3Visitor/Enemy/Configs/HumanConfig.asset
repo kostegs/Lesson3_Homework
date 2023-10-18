@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19abfdaae52832d40980f2a457fb73bb, type: 3}
   m_Name: HumanConfig
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: Human
   <Score>k__BackingField: 20
+  <Weight>k__BackingField: 20

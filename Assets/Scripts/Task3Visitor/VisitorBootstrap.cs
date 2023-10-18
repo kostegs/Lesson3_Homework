@@ -11,6 +11,7 @@ namespace Visitor
         private void Awake()
         {
             _score = new Score(_spawner);
+            _spawner.Initialize();
             _spawner.StartWork();
         }
 

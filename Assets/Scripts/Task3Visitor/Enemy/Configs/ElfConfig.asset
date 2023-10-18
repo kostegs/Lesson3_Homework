@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd91ee58419dcf4fb7f4e8a69546937, type: 3}
   m_Name: ElfConfig
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: Elf
   <Score>k__BackingField: 10
+  <Weight>k__BackingField: 10
