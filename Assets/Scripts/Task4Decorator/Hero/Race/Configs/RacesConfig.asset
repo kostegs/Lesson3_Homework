@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2590473450869e45ad905c6e996d9ac, type: 3}
+  m_Name: RacesConfig
+  m_EditorClassIdentifier: 
+  _orkConfig: {fileID: 11400000, guid: a9e954df2d111254a9a8f0c1eb558b30, type: 2}
+  _elfConfig: {fileID: 11400000, guid: d9771ac2a350b7541977747b54ce33d9, type: 2}
+  _humanConfig: {fileID: 11400000, guid: 201c945e0c31e744ca5f003b3fe4e930, type: 2}

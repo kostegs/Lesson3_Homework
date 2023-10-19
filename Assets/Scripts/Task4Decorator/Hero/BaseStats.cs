@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseStats : MonoBehaviour
+[CreateAssetMenu(fileName = "BaseStats", menuName = "DecoratorConfigs/BaseStats")]
+public class BaseStats : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] int _power;
+    [SerializeField] int _intellect;
+    [SerializeField] int _dexerity;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int Power => _power;
+    public int Intellect => _intellect;
+    public int Dexerity => _dexerity;
+
 }
