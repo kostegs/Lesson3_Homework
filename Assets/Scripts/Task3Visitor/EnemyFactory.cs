@@ -8,7 +8,7 @@ namespace Visitor
     {
         [SerializeField] private Human _humanPrefab;
         [SerializeField] private Ork _orkPrefab;
-        [SerializeField] private Elf _elfPrefab;
+        [SerializeField] private Elf _elfPrefab; 
 
         public Enemy Get(EnemyConfig enemyConfig)
         {
@@ -26,6 +26,6 @@ namespace Visitor
                 default:
                     throw new ArgumentException(nameof(enemyConfig));
             }
-        }
+        }        
     }
 }
